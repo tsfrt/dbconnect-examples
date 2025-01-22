@@ -67,7 +67,7 @@ def transform_columns(df: DataFrame) -> DataFrame:
     cleaned = (
         df.withColumn(
             "passenger_type",
-            F.when(df.passenger_count > 1, "multi").otherwise("single"),
+            lit(F.when(df.passenger_count > 1, "multi").otherwise("single")),
         )
         .withColumn("has_tolls", F.when(df.tolls > 0, True).otherwise(False))
         .withColumn("amount_rounded", F.ceil(df.amount))

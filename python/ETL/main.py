@@ -9,7 +9,7 @@ def main():
 
   # If you have a default profile set in your .databrickscfg no additional code
   # changes are needed.
-  spark = DatabricksSession.builder.serverless().getOrCreate()
+  spark = DatabricksSession.builder.getOrCreate()
 
   # Alternate way to configure your Spark session:
   # spark = DatabricksSession.builder.profile("PROFILE").clusterId("CLUSTER_ID").getOrCreate()
