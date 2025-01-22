@@ -5,6 +5,10 @@
 bundle:
   name: dbconnect-examples-1
 
+include:
+  - python/*.yaml
+
+
 targets:
   dev:
     mode: development
