@@ -22,10 +22,13 @@ resources:
         - task_key: etl_job2_r
           notebook_task:
             notebook_path: ../R/demo.ipynb
-          environment_key: default
+          environment_key: env2
 
       # A list of task execution environment specifications that can be referenced by tasks of this job.
       environments:
         - environment_key: default
           spec:
             client: "1"
+        - environment_key: env2
+          spec:
+            client: "2"

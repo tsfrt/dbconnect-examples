@@ -21,8 +21,4 @@ targets:
       host: https://adb-984752964297111.11.azuredatabricks.net
       root_path: /Workspace/Users/thomas.seufert@databricks.com/.bundle/${bundle.name}/${bundle.target}
 
-  ## Optionally, there could be 'staging' or 'prod' targets here.
-  #
-  # prod:
-  #   workspace:
-  #     host: https://adb-984752964297111.11.azuredatabricks.net
+ 
